@@ -13,7 +13,7 @@ def rawcompiler(path2, list_):
         list_.append(df)
     frame = pd.concat(list_)#concatenate all files to the empty dataframe
     print (len(frame))   
-    frame = frame.sort_values('Date/Time', axis=0, ascending=True, inplace=False)    
+    frame = frame.sort_values('<insert column name>', axis=0, ascending=True, inplace=False)    
     frame.to_csv('')
     
 rawcompiler(path, list_)
