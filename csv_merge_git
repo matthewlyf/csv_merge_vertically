@@ -7,7 +7,7 @@ frame = pd.DataFrame()
 list_ = [] 
 
 def rawcompiler(path2, list_):
-    allFiles2 = glob.glob(path2 + "/*.csv") #looks for  all files in path that have .xls extension
+    allFiles2 = glob.glob(path2 + "/*.csv") #looks for  all files in path that have .csv extension
     for file_ in allFiles2: #opens all files and append it to list
         df = pd.read_csv(file_)
         list_.append(df)
